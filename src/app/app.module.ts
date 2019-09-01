@@ -8,6 +8,8 @@ import { NavComponent } from './nav/nav.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     NavComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
