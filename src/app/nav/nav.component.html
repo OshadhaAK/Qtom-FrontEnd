@@ -8,36 +8,34 @@
               </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto" style="padding-bottom: 20px; padding-top: 20px">
-              <li class="nav-item active" style="margin-right: 30px">
-                <a class="nav-link" routerLink="">Home
-                      <span class="sr-only">(current)</span>
-                    </a>
+              <li class="nav-item" style="margin-right: 30px">
+                <a data-toggle="collapse" class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Home</a>
               </li>
               <li class="nav-item" style="margin-right: 30px">
-                <a class="nav-link" routerLink="AboutUs">About</a>
+                <a data-target=".navbar-collapse" class="nav-link" routerLink="AboutUs" routerLinkActive="active">About</a>
               </li>
               <li class="nav-item dropdown" style="margin-right: 30px">
-                  <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
                   Services
                 </a>
                   
                   <div class="dropdown-menu dropdown-menu-right animate slideIn bg-light" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Designing</strong></a>
-                    <a class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Embedded Systems</strong></a>
-                    <a class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>PLC Based Systems</strong></a>
-                    <a class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>PCB Design and Manufacturing</strong></a>
-                    <a class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Sematic Designing</strong></a>
-                    <a class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Firmware Developing</strong></a>
-                    <a class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Customized Electronic Solutions</strong></a>
+                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Designing</strong></a>
+                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Embedded Systems</strong></a>
+                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>PLC Based Systems</strong></a>
+                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>PCB Design and Manufacturing</strong></a>
+                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Sematic Designing</strong></a>
+                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Firmware Developing</strong></a>
+                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Customized Electronic Solutions</strong></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" routerLink="">Industrial Automation</a>
+                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink="">Industrial Automation</a>
                   </div>
                 </li>
                 <li class="nav-item" style="margin-right: 30px">
-                    <a class="nav-link" routerLink="Gallery">Gallery</a>
+                    <a data-target=".navbar-collapse" class="nav-link" routerLink="Gallery" routerLinkActive="active">Gallery</a>
                   </li>
               <li class="nav-item" style="margin-right: 30px">
-                <a class="nav-link" routerLink="ContactUs">Contact</a>
+                <a data-target=".navbar-collapse" class="nav-link" routerLink="ContactUs" routerLinkActive="active">Contact</a>
               </li>
             </ul>
           </div>
