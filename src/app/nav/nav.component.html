@@ -8,34 +8,46 @@
               </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto" style="padding-bottom: 20px; padding-top: 20px">
-              <li class="nav-item" style="margin-right: 30px">
-                <a data-toggle="collapse" class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Home</a>
+              <li class="nav-item" style="margin-right: 30px" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a  class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Home</a>
               </li>
-              <li class="nav-item" style="margin-right: 30px">
-                <a data-target=".navbar-collapse" class="nav-link" routerLink="AboutUs" routerLinkActive="active">About</a>
+              <li class="nav-item" style="margin-right: 30px" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a  class="nav-link" routerLink="AboutUs" routerLinkActive="active">About</a>
               </li>
-              <li class="nav-item dropdown" style="margin-right: 30px">
-                  <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
-                  Services
+              <li class="nav-item dropdown" style="margin-right: 30px" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a class="nav-link dropdown-toggle" routerLink="Products&Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
+                  Products & Services
                 </a>
                   
                   <div class="dropdown-menu dropdown-menu-right animate slideIn bg-light" aria-labelledby="navbarDropdown">
-                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Designing</strong></a>
-                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Embedded Systems</strong></a>
-                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>PLC Based Systems</strong></a>
-                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>PCB Design and Manufacturing</strong></a>
-                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Sematic Designing</strong></a>
-                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Firmware Developing</strong></a>
-                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink=""><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Customized Electronic Solutions</strong></a>
-                    <div class="dropdown-divider"></div>
-                    <a data-target=".navbar-collapse" class="dropdown-item" routerLink="">Industrial Automation</a>
+                    
+                    <a  class="dropdown-item" routerLink="Products&Services" fragment="about"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Embedded Systems</strong></a>
+                    <a  class="dropdown-item" routerLink="Products&Services" fragment="services"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>PLC Based Systems</strong></a>
+                    <a  class="dropdown-item" routerLink="Products&Services" fragment="why-us"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>PCB Design and Manufacturing</strong></a>
+                    <a  class="dropdown-item" routerLink="Products&Services" fragment="features"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Schematic Designing</strong></a>
+                    <a  class="dropdown-item" routerLink="Products&Services" fragment="team"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Firmware Developing</strong></a>
+                    <a  class="dropdown-item" routerLink="Products&Services" fragment="pricing"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Customized Electronic Solutions</strong></a>
+                    
                   </div>
                 </li>
-                <li class="nav-item" style="margin-right: 30px">
-                    <a data-target=".navbar-collapse" class="nav-link" routerLink="Gallery" routerLinkActive="active">Gallery</a>
+                
+                <li class="nav-item dropdown" style="margin-right: 30px" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a class="nav-link dropdown-toggle" routerLink="Industries" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
+                    Industries
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right animate slideIn bg-light" aria-labelledby="navbarDropdown">
+                    <a  class="dropdown-item" routerLink="Industries" fragment="about"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Food & Beverages</strong></a>
+                    <a  class="dropdown-item" routerLink="Industries" fragment="services"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Apperal</strong></a>
+                    <a  class="dropdown-item" routerLink="Industries" fragment="why-us"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Agriculture</strong></a>
+                    <a  class="dropdown-item" routerLink="Industries" fragment="features"><span><i class="fas fa-circle"></i>&nbsp;&nbsp;&nbsp;</span><strong>Printing</strong></a>
+                       
+                  </div>
+                </li>
+                <li class="nav-item" style="margin-right: 30px" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a  class="nav-link" routerLink="Gallery" routerLinkActive="active">Gallery</a>
                   </li>
-              <li class="nav-item" style="margin-right: 30px">
-                <a data-target=".navbar-collapse" class="nav-link" routerLink="ContactUs" routerLinkActive="active">Contact</a>
+              <li class="nav-item" style="margin-right: 30px" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a  class="nav-link" routerLink="ContactUs" routerLinkActive="active">Contact</a>
               </li>
             </ul>
           </div>
